@@ -1,259 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About TechCon 2024</title>
-  <style>
-    /* Minimal styling to keep layout consistent with a typical homepage */
-    :root {
-      --max-w: 1000px;
-      --accent: #0b66c3;
-      --muted: #666;
-      --gap: 1rem;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-    }
-    body {
-      margin: 0;
-      color: #222;
-      line-height: 1.5;
-      display: flex;
-      justify-content: center;
-      padding: 2rem;
-      background: #f9fbfd;
-    }
-    .container {
-      width: 100%;
-      max-width: var(--max-w);
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 8px 24px rgba(20,30,40,0.06);
-      overflow: hidden;
-    }
-    header {
-      padding: 1.25rem 1.5rem;
-      border-bottom: 1px solid #eee;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: var(--gap);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.25rem;
-      color: var(--accent);
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 0.75rem;
-      align-items: center;
-    }
-    nav a {
-      text-decoration: none;
-      padding: 0.5rem 0.75rem;
-      border-radius: 6px;
-      color: #0b2136;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    nav a:hover, nav a:focus {
-      background: rgba(11,102,195,0.08);
-      outline: none;
-    }
-
-    main {
-      padding: 1.5rem;
-      display: grid;
-      gap: 1.25rem;
-    }
-    article {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      border: 1px solid #f0f2f4;
-    }
-    article h2 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-      color: #0b2136;
-      font-size: 1.05rem;
-    }
-    .history .images,
-    .speakers .speaker-grid {
-      display: grid;
-      gap: 0.75rem;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    }
-    figure {
-      margin: 0;
-      background: #fbfcfd;
-      padding: 0.5rem;
-      border-radius: 6px;
-      text-align: center;
-      border: 1px solid #f2f4f6;
-    }
-    figure img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto 0.5rem;
-      border-radius: 4px;
-    }
-    figcaption {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    .speaker {
-      display: flex;
-      gap: 0.75rem;
-      align-items: flex-start;
-    }
-    .speaker img {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .speaker p {
-      margin: 0;
-      font-size: 0.95rem;
-    }
-    footer {
-      padding: 1rem 1.5rem;
-      border-top: 1px solid #eee;
-      background: #fcfdff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    .small {
-      font-size: 0.88rem;
-      color: var(--muted);
-    }
-
-    /* Responsive tweaks */
-    @media (max-width: 600px) {
-      header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-      nav ul { flex-wrap: wrap; }
-    }
-  </style>
 </head>
 <body>
-  <div class="container" role="document">
-    <!-- HEADER -->
-    <header>
-      <h1>About TechCon 2024</h1>
+  <!-- HEADER SECTION -->
+  <header>
+    <h1>About TechCon 2024</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <!-- Nav matches homepage -->
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="register.html">Register</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <!-- MAIN SECTION -->
+  <main>
+    <!-- History Article -->
+    <article>
+      <h2>Our History</h2>
+      <p>
+        TechCon began over a decade ago as a small gathering of passionate developers. 
+        Since then, it has evolved into a world-class conference that attracts thousands 
+        of attendees each year.
+      </p>
+      <img src="images/history.jpg" alt="Historic image of early TechCon event" width="400">
+    </article>
 
-    <!-- MAIN CONTENT -->
-    <main>
-      <!-- HISTORY ARTICLE -->
-      <article class="history" aria-labelledby="history-heading">
-        <h2 id="history-heading">History</h2>
-        <p>
-          TechCon began as a single-day meetup in 2012 and has since grown into a major annual conference focused on practical software engineering, ethical AI, and developer empowerment.
-          Each year the event expands both its programming and community outreach efforts. Below are photos from landmark moments in TechCon history.
-        </p>
+    <!-- Mission Article -->
+    <article>
+      <h2>Our Mission</h2>
+      <p>
+        At TechCon, our mission is to inspire innovation, foster collaboration, and 
+        push the boundaries of technology for a better tomorrow.
+      </p>
+      <img src="images/mission.jpg" alt="Symbolic image representing innovation" width="400">
+    </article>
 
-        <div class="images" aria-hidden="false">
-          <!-- Replace the src values with real image paths -->
-          <figure>
-            <img src="images/techcon-2013-opening.jpg" alt="TechCon 2013 opening keynote on a packed stage">
-            <figcaption>TechCon 2013 — Opening keynote</figcaption>
-          </figure>
+    <!-- Past Speakers Article -->
+    <article>
+      <h2>Notable Past Speakers</h2>
+      <p>Over the years, TechCon has hosted influential figures in the tech industry:</p>
 
-          <figure>
-            <img src="images/techcon-2016-workshop.jpg" alt="Attendees collaborating in a 2016 hands-on workshop">
-            <figcaption>2016 hands-on workshop</figcaption>
-          </figure>
+      <section>
+        <h3>Dr. Jane Smith</h3>
+        <p>Renowned AI researcher who pioneered ethical machine learning practices.</p>
+        <img src="images/jane_smith.jpg" alt="Photo of Dr. Jane Smith" width="200">
+      </section>
 
-          <figure>
-            <img src="images/techcon-2019-networking.jpg" alt="Networking reception with attendees exchanging ideas">
-            <figcaption>2019 networking reception</figcaption>
-          </figure>
-        </div>
-      </article>
+      <section>
+        <h3>John Doe</h3>
+        <p>Founder of FutureTech, a leader in quantum computing innovation.</p>
+        <img src="images/john_doe.jpg" alt="Photo of John Doe" width="200">
+      </section>
+    </article>
+  </main>
 
-      <!-- MISSION ARTICLE -->
-      <article class="mission" aria-labelledby="mission-heading">
-        <h2 id="mission-heading">Mission</h2>
-        <p>
-          TechCon's mission is to accelerate learning and ethical innovation in technology by connecting practitioners, researchers, and students.
-          We focus on actionable talks, reproducible workshops, and mentorship so attendees leave with concrete skills and new collaborators.
-        </p>
-
-        <figure aria-hidden="false" style="margin-top:0.75rem;">
-          <img src="images/mission-illustration.png" alt="Illustration showing collaboration and shared learning">
-          <figcaption>Collaboration and shared learning underpin our mission.</figcaption>
-        </figure>
-      </article>
-
-      <!-- PAST SPEAKERS ARTICLE -->
-      <article class="speakers" aria-labelledby="speakers-heading">
-        <h2 id="speakers-heading">Past Speakers</h2>
-        <p>Over the years TechCon has hosted leaders from startups, academia, and large tech firms. Below are a few notable speakers and short bios.</p>
-
-        <div class="speaker-grid">
-          <div class="speaker" role="article" aria-labelledby="speaker-lee">
-            <img src="images/speakers/lee-chen.jpg" alt="Portrait of Lee Chen, software architect">
-            <div>
-              <h3 id="speaker-lee" style="margin:0;font-size:1rem">Lee Chen</h3>
-              <p>
-                Senior software architect known for scalable systems and open-source tooling. Lee presented a widely-cited talk on microservice observability and maintains several popular developer libraries.
-              </p>
-            </div>
-          </div>
-
-          <div class="speaker" role="article" aria-labelledby="speaker-maria" style="margin-top:0.75rem;">
-            <img src="images/speakers/maria-garcia.jpg" alt="Portrait of Maria Garcia, AI researcher">
-            <div>
-              <h3 id="speaker-maria" style="margin:0;font-size:1rem">Maria García</h3>
-              <p>
-                Researcher in human-centered AI. Maria's work focuses on fairness and interpretability in machine learning; she led a hands-on session at TechCon on designing inclusive datasets.
-              </p>
-            </div>
-          </div>
-
-          <div class="speaker" role="article" aria-labelledby="speaker-sam" style="margin-top:0.75rem;">
-            <img src="images/speakers/sam-owens.jpg" alt="Portrait of Sam Owens, CTO">
-            <div>
-              <h3 id="speaker-sam" style="margin:0;font-size:1rem">Sam Owens</h3>
-              <p>
-                CTO at a cloud startup. Sam spoke about engineering culture and ownership and ran a popular panel on sustainable engineering practices for high-growth teams.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <!-- FOOTER (consistent with homepage) -->
-    <footer>
-      <div class="small">© <span id="year"></span> TechCon. All rights reserved.</div>
-      <div class="small">
-        <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
-      </div>
-    </footer>
-  </div>
-
-  <script>
-    // Small script to keep footer year up to date
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>&copy; 2024 TechCon. All rights reserved. Copyright.</p>
+  </footer>
 </body>
 </html>
